@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Electrolize&display=swap" rel="stylesheet" />
+        
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <h1>Password Generator</h1>
+            <div id="controls-wrapper">
+                <div id="settings">
+                    <form>
+                        <fieldset id="character-set">
+                            <legend>Requirements</legend>
+                            <label for="has-uppercase">
+                                <input type="checkbox" id="has-uppercase" checked />Includes uppercase letters
+                            </label>
+                            <label for="has-numbers">
+                                <input type="checkbox" id="has-numbers" checked />Includes numbers
+                            </label>
+                            <label for="has-special-chars">
+                                <input type="checkbox" id="has-special-chars" />Includes special characters
+                            </label>
+                        </fieldset>
+                        <fieldset id="adjustments">
+                            <legend>Adjustments</legend>
+                            <label for="password-length">Password Length:
+                                <input id="password-length" type="number" value="12" />
+                            </label>
+                            <label for="complexity">Complexity:
+                                <select id="complexity" name="complexity">
+                                    <option value="simple">Simple</option>
+                                    <option value="balanced" selected >Balanced</option>
+                                    <option value="complex">Complex</option>
+                                </select>
+                            </label>
+                        </fieldset>
+                        <button id="generate-password" type="button">Generate Password</button>
+                    </form>
+                    <div id="password-display" hidden>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>

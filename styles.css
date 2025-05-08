@@ -1,0 +1,123 @@
+:root {
+    --background-color: #252e42;
+    --secondary-background-color: #16182e;
+    --text-color: #f2d633;
+    --secondary-text-color: #e6b115;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Electrolize", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color)
+}
+
+#page-wrapper {
+    background-color: var(--background-color);
+    height: 100vh;
+    padding: 30px;
+}
+
+h1 {
+    font-family: "Bruno Ace SC", sans-serif;
+    color: var(--secondary-text-color);
+    text-align: center;
+}
+
+#controls-wrapper {
+    background-color: var(--secondary-background-color);
+    padding: 20px;
+    width: 80%;
+    margin: 10% auto 0;
+    border-radius: 15px;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-family: "Bruno Ace SC", sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+fieldset > label {
+    display: block;
+    padding: 1em 0;
+    letter-spacing: 0.05em;
+}
+
+input[type="checkbox"] {
+    margin-right: 1em;
+    margin-left: 0.5em;
+    transform: scale(1.5);
+}
+
+#adjustments {
+    margin-top: 1em;
+}
+
+#generate-password {
+    font-family: "Bruno Ace SC", sans-serif;
+    font-size: 1.1em;
+    background-color: var(--secondary-background-color);
+    color: var(--text-color);
+    display: block;
+    margin: 10px auto;
+    border: 1px solid var(--text-color);
+    padding: 0.8em 1.2em;   
+}
+
+#generate-password:hover {
+    background-color: var(--text-color);
+    color: var(--secondary-background-color);
+    cursor: pointer;
+}
+
+#password-length, #complexity {
+    background-color: var(--background-color);
+    border: none;
+    font-size: 1em;
+    color: var(--text-color);
+    display: inline-block;
+    text-align: left;
+    margin-left: 0.5em;
+}
+
+#password-length {
+    width: 4em;
+    padding: 0.15em;
+}
+
+#complexity {
+    width: 8em;
+    padding: 0.2em;
+}
+
+option {
+    color: #7c7f87;
+}
+
+#password-display {
+    width: 100%;
+    margin: 20px auto 0;
+    border: 5px double var(--secondary-text-color);
+    background-color: #1f2436;
+    padding: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    color: #fcf1c7;
+    text-align: center;
+}
+
+#password-display:hover {
+    background-color: #2f3752;
+    cursor: pointer;
+}
